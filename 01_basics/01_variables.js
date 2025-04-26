@@ -1,18 +1,22 @@
-const accountId = 144553;
-let accountEmail = "sureshbugaliya877@gmail.com";
-var accounPassword = "123456789";
-accountCity = "jaipur";
-
-// accountId = 22; // not allowed 
-accountEmail = "suresh@gmil.com";
-accounPassword = "898888";
-accountCity = "pune";
+const accountId = 144553
+let accountEmail = "suresh@google.com"
+var accountPassword = "12345"
+accountCity = "Jaipur"
 let accountState;
 
-// console.log(accountId);
-
-/* prefer to not used var 
-becouse is issue in block scope and funcilate scope */ 
+// accountId = 2 // not allowed
 
 
-console.table([accountId, accountEmail, accounPassword, accountCity, accountState]);
+accountEmail = "sb@sb.com"
+accountPassword = "21212121"
+accountCity = "Bengaluru"
+
+console.log(accountId);
+
+/*
+Prefer not to use var
+because of issue in block scope and functional scope
+*/
+
+
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
