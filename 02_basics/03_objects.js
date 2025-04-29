@@ -2,7 +2,7 @@
 //Object.create
 //object literals
  
-const mysym = Symbol("key1");
+const mySym = Symbol("key1");
 
 const biodata = {
     name: "suresh",
@@ -11,10 +11,25 @@ const biodata = {
     address: "jaipur",
     isLoggedIn: false,
     lastLoginDays: ["monday", "sunday"],
-    [mysym]: "mykey1"
+    [mySym]: "mykey1"
 }
 
 // console.log(biodata.email);
 // console.log(biodata["age"]);
-console.log(biodata[mysym]);
-console.log(typeof biodata[mysym]);
+// console.log(biodata[mySym]);
+// console.log(typeof biodata[mySym]);
+
+// biodata.email = "change@gmail.com";
+// console.log(biodata);
+// Object.freeze(biodata);
+// biodata.email = "againchange@gmail.com";
+// console.log(biodata);
+
+biodata.greeting = function(){
+    console.log("hello js user");
+}
+biodata.greetingTwo = function(){
+    console.log(`hello js user ${this.name}`);
+}
+console.log(biodata.greeting());
+console.log(biodata.greetingTwo());
