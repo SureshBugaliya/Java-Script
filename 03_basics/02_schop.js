@@ -27,16 +27,15 @@ function one(){
 
 // one()
 
-if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
-        const website = " youtube"
-        // console.log(username + website);
+if(true){
+    const username = "suresh"
+    if(username === "suresh"){
+        const website = " yotube"
+        console.log(username + website);
     }
-    // console.log(website);
+    // console.log(website); // not allow
 }
-
-// console.log(username);
+// console.log(username); // not allow
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
